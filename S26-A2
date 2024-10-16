@@ -1,0 +1,23 @@
+RabbitMQ
+
+RabbitMQ é um software de mensageria open-source que implementa o protocolo **AMQP** (Advanced Message Queuing Protocol). Ele é usado para enviar, receber e gerenciar mensagens entre sistemas ou aplicações de maneira eficiente, confiável e escalável.
+
+### Principais características:
+1. **Mensageria Assíncrona**: Permite que diferentes partes de um sistema se comuniquem de maneira assíncrona, ou seja, os remetentes e destinatários de mensagens não precisam estar diretamente conectados ou depender da resposta imediata.
+   
+2. **Filas de Mensagens**: As mensagens são enviadas para "filas" e processadas pelos "consumidores" (aplicações que leem as mensagens) no seu próprio tempo. Isso garante que as mensagens não sejam perdidas, mesmo que a aplicação consumidora não esteja disponível no momento do envio.
+
+3. **Trocas (Exchanges)**: O RabbitMQ utiliza um conceito de "exchanges", que roteiam as mensagens para as filas com base em regras predefinidas, como tópicos ou padrões de roteamento.
+
+4. **Suporte a Múltiplos Protocolos**: Embora seja principalmente usado com AMQP, RabbitMQ também pode suportar outros protocolos de mensageria, como MQTT e STOMP.
+
+5. **Escalabilidade e Distribuição**: Pode ser configurado em clusters, permitindo distribuir a carga de processamento e aumentar a resiliência da aplicação.
+
+6. **Persistência**: As mensagens podem ser configuradas para serem persistentes, garantindo que elas não sejam perdidas mesmo em caso de falha do servidor RabbitMQ.
+
+### Exemplos de Uso:
+- **Integração entre sistemas**: Quando diferentes serviços de uma arquitetura distribuída (como microservices) precisam se comunicar.
+- **Processamento em segundo plano**: Aplicações que realizam tarefas demoradas ou complexas podem enviar essas tarefas para o RabbitMQ para serem processadas por outros serviços em segundo plano.
+- **Balanceamento de carga**: Distribuição de mensagens entre vários consumidores, balanceando a carga de processamento.
+
+Em resumo, RabbitMQ facilita a comunicação e coordenação entre sistemas e componentes de software, tornando-os mais robustos e escaláveis.
