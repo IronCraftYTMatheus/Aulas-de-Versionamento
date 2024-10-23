@@ -1,1 +1,17 @@
+O **Apache Kafka** é uma plataforma de streaming distribuída de código aberto, projetada para o processamento em tempo real de grandes volumes de dados. Ele é utilizado para construir pipelines de dados em tempo real e aplicações de streaming, oferecendo três funcionalidades principais:
 
+1. **Publicação e Assinatura de Fluxos de Dados**: O Kafka permite que aplicativos enviem e recebam mensagens (eventos) de forma assíncrona, funcionando como um sistema de mensagens distribuído.
+
+2. **Armazenamento de Fluxos de Dados**: O Kafka armazena dados de forma distribuída e replicada, permitindo a persistência de grandes volumes de dados de forma confiável.
+
+3. **Processamento de Fluxos em Tempo Real**: Ele possibilita o processamento de dados à medida que são gerados, permitindo a análise e transformação dos dados em tempo real.
+
+### Componentes principais:
+
+- **Produtores**: São responsáveis por publicar (escrever) dados no Kafka.
+- **Consumidores**: São responsáveis por ler os dados armazenados no Kafka.
+- **Brokers**: São os servidores que compõem o cluster do Kafka e armazenam os dados.
+- **Tópicos**: Os dados no Kafka são organizados em tópicos, que são como "canais" de dados.
+- **Partições**: Cada tópico é dividido em partições, o que facilita a escalabilidade, já que os dados podem ser distribuídos entre diferentes servidores.
+
+O Kafka é muito usado em sistemas que precisam lidar com grandes volumes de dados em tempo real, como bancos, e-commerces, redes sociais e monitoramento de dispositivos IoT.
